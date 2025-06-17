@@ -9,7 +9,7 @@ class record: # Convenção é usar a primeira letra maiúscula para classes
         self.city = city
         self.sex = sex
 
-    def exibir_record(self):
+    def show_record(self):
         print("--------------------------")
         print("Personal Details")
         print(f"name: {self.name}")
