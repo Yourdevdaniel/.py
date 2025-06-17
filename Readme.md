@@ -41,6 +41,7 @@ Para rodar um arquivo específico, navegue até a pasta dele no terminal e execu
 python nome_do_arquivo.py
 
 ou apenas clique no arquivo.py
+```
 
 -----------------------------------------------------------
 
