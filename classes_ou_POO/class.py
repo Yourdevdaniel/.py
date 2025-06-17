@@ -1,4 +1,4 @@
-class Ficha: # Convenção é usar a primeira letra maiúscula para classes
+class record: # Convenção é usar a primeira letra maiúscula para classes
     def __init__(self, name, age, Marital_Status, sexuality, phone_number, country, city, sex):
         self.name = name
         self.age = age
@@ -9,7 +9,7 @@ class Ficha: # Convenção é usar a primeira letra maiúscula para classes
         self.city = city
         self.sex = sex
 
-    def exibir_ficha(self):
+    def exibir_record(self):
         print("--------------------------")
         print("Personal Details")
         print(f"name: {self.name}")
@@ -43,7 +43,7 @@ name_final, age_final, Marital_Status_final, sexuality_final, \
 phone_number_final, country_final, city_final, sex_final = colected_data
 
 
-new_record = Ficha(name_final, age_final, Marital_Status_final,
+new_record = record(name_final, age_final, Marital_Status_final,
                    sexuality_final, phone_number_final, country_final, city_final, sex_final)
 
-new_record.exibir_ficha()
+new_record.exibir_record()
