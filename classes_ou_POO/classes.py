@@ -36,20 +36,14 @@ def fazer_ficha():
     return nome_input, idade_input, estado_civil_input, sexualidade_input, \
            telefone_input, pais_input, cidade_input, sexo_input
 
-# --- A PARTE QUE FALTAVA (ou que estava incorreta) ESTÁ AQUI ---
 
-# 1. CHAMA a função fazer_ficha() para que ela colete os dados
-#    E armazena o que ela "devolve" (a tupla de dados) na variável 'dados_coletados'.
 dados_coletados = fazer_ficha()
 
-# 2. DESEMPACOTA os dados coletados da tupla para variáveis individuais.
-#    A ordem aqui importa e deve ser a mesma do 'return' da função!
 nome_final, idade_final, estado_civil_final, sexualidade_final, \
 telefone_final, pais_final, cidade_final, sexo_final = dados_coletados
 
-# 3. CRIA o objeto da classe Ficha usando as variáveis que agora existem FORA da função.
+
 nova_ficha = Ficha(nome_final, idade_final, estado_civil_final,
                    sexualidade_final, telefone_final, pais_final, cidade_final, sexo_final)
 
-# 4. EXIBE a ficha.
 nova_ficha.exibir_ficha()
